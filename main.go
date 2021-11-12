@@ -1,7 +1,8 @@
 package main
 
-import "log"
+import "github.com/startup-of-zero-reais/takeout-users-api/server/infra/server"
 
 func main() {
-	log.Println("Hello back")
+	s := server.NewServer()
+	s.Listen("8081")
 }
